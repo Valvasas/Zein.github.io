@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Jeiv Studio – Software Developer terpercaya untuk website, undangan digital, aplikasi, e-commerce dan konsultan IT." />
+  <title>Jeiv Studio – Software Developer</title>
+  
+  <!-- ============================
+       FAVICON
+  ============================= -->
+  <link rel="icon" type="image/x-icon" href="assets/JSstudio.png" />
+  <link rel="apple-touch-icon" href="assets/JSstudio.png" />
+  
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Fraunces:ital,wght@0,700;0,900;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="jeiv.studio.css" />
+</head>
+<body>
+
+  <!-- ============================
+       PROMO BANNER
+  ============================= -->
+  <div class="promo-banner" id="promoBanner">
+    🎉 Promo Spesial! Diskon 20% untuk pemesanan pertama —
+    <a href="#kontak">Hubungi kami sekarang</a> sebelum kehabisan!
+    <button class="promo-close" onclick="closeBanner()">✕</button>
+  </div>
+
+  <!-- SCROLL PROGRESS BAR -->
+  <div class="progress-bar" id="progressBar"></div>
+
+  <!-- ============================
+       NAVBAR
+  ============================= -->
+  <nav id="navbar">
+    <a href="#" class="nav-brand">Jeiv Studio</a>
+    <ul class="nav-links">
+      <li><a href="#layanan">Layanan</a></li>
+      <li><a href="#harga">Harga</a></li>
+      <li><a href="#kalkulator">Kalkulator</a></li>
+      <li><a href="#proses">Cara Kerja</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#kontak" class="nav-cta">Hubungi Kami</a></li>
+    </ul>
+    <button class="nav-hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#layanan"    onclick="closeMenu()">Layanan</a>
+    <a href="#harga"      onclick="closeMenu()">Harga</a>
+    <a href="#kalkulator" onclick="closeMenu()">Kalkulator</a>
+    <a href="#proses"     onclick="closeMenu()">Cara Kerja</a>
+    <a href="#faq"        onclick="closeMenu()">FAQ</a>
+    <a href="#kontak"     onclick="closeMenu()">Hubungi Kami</a>
+  </div>
+
+  <!-- ============================
+       HERO
+  ============================= -->
+  <section class="hero" id="home">
+    <div class="hero-bg-circle c1"></div>
+    <div class="hero-bg-circle c2"></div>
+    <div class="hero-tag">🚀 Solusi Digital Terpercaya</div>
+    <h1>Software<br /><span>Developer</span><br />untuk Anda</h1>
+    <p class="hero-sub">
+      Jeiv Studio hadir untuk mewujudkan kebutuhan digital Anda — dari website,
+      undangan digital, aplikasi, hingga konsultasi IT. Mudah, cepat, dan terjangkau.
+    </p>
+    <div class="hero-actions">
+      <a href="#layanan" class="btn-primary">🔍 Lihat Layanan</a>
+      <a href="#kontak"  class="btn-outline">💬 Hubungi Kami</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><div class="stat-num">10+</div><div class="stat-label">Proyek Selesai</div></div>
+      <div class="stat"><div class="stat-num">10+</div><div class="stat-label">Klien Puas</div></div>
+      <div class="stat"><div class="stat-num">1 Thn</div><div class="stat-label">Pengalaman</div></div>
+    </div>
+  </section>
+
+  <!-- SOCIAL PROOF MARQUEE -->
+  <div class="marquee-bar">
+    <div class="marquee-track">
+      <span>⭐ Dipercaya 10+ Klien</span><span class="dot">•</span>
+      <span>🚀 10+ Proyek Selesai</span><span class="dot">•</span>
+      <span>💬 Konsultasi Gratis</span><span class="dot">•</span>
+      <span>✅ Garansi Kepuasan</span><span class="dot">•</span>
+      <span>🔒 Data Terjamin</span><span class="dot">•</span>
+      <span>⚡ Pengerjaan Cepat</span><span class="dot">•</span>
+      <!-- duplicate for seamless loop -->
+      <span>⭐ Dipercaya 10+ Klien</span><span class="dot">•</span>
+      <span>🚀 10+ Proyek Selesai</span><span class="dot">•</span>
+      <span>💬 Konsultasi Gratis</span><span class="dot">•</span>
+      <span>✅ Garansi Kepuasan</span><span class="dot">•</span>
+      <span>🔒 Data Terjamin</span><span class="dot">•</span>
+      <span>⚡ Pengerjaan Cepat</span><span class="dot">•</span>
+    </div>
+  </div>
+
+  <!-- ============================
+       LAYANAN
+  ============================= -->
+  <section class="section" id="layanan">
+    <div class="section-header reveal">
+      <div class="section-tag">Apa yang Kami Buat</div>
+      <h2 class="section-title">Layanan Kami</h2>
+      <p class="section-desc">Berbagai solusi digital berkualitas tinggi dengan harga yang bersahabat untuk semua kalangan.</p>
+    </div>
+
+    <div class="services-grid">
+
+      <!-- WEBSITE -->
+      <div class="service-card reveal" data-service="website">
+        <div class="service-icon">🌐</div>
+        <h3>Website</h3>
+        <p>Website profil, toko online, atau portal bisnis yang modern dan mudah digunakan siapapun.</p>
+        <div class="service-price-badge">Mulai dari Rp 100.000</div>
+        <button class="btn-service-detail" onclick="openServiceModal('website')">Lihat Detail & Contoh →</button>
+      </div>
+
+      <!-- UNDANGAN DIGITAL -->
+      <div class="service-card reveal" data-service="undangan">
+        <div class="service-icon">💌</div>
+        <h3>Undangan Digital</h3>
+        <p>Undangan pernikahan, ulang tahun, atau acara spesial berbasis web yang elegan dan mudah dibagikan via link.</p>
+        <div class="service-price-badge">Mulai dari Rp 75.000</div>
+        <button class="btn-service-detail" onclick="openServiceModal('undangan')">Lihat Detail & Contoh →</button>
+      </div>
+
+      <!-- GAMES -->
+      <div class="service-card reveal" data-service="games">
+        <div class="service-icon">🎮</div>
+        <h3>Games / Mini Game</h3>
+        <p>Mini game interaktif untuk kencan, acara, atau promosi bisnis Anda yang seru dan unik.</p>
+        <div class="service-price-badge">Mulai dari Rp 50.000</div>
+        <button class="btn-service-detail" onclick="openServiceModal('games')">Lihat Detail & Contoh →</button>
+      </div>
+
+      <!-- APPS -->
+      <div class="service-card reveal" data-service="apps">
+        <div class="service-icon">📱</div>
+        <h3>Apps / Aplikasi</h3>
+        <p>Aplikasi web maupun mobile sesuai kebutuhan bisnis Anda yang intuitif dan responsif di semua perangkat.</p>
+        <div class="service-price-badge">Mulai dari Rp 500.000</div>
+        <button class="btn-service-detail" onclick="openServiceModal('apps')">Lihat Detail & Contoh →</button>
+      </div>
+
+      <!-- EDUKASI -->
+      <div class="service-card reveal" data-service="edukasi">
+        <div class="service-icon">🎓</div>
+        <h3>Platform Edukasi</h3>
+        <p>Sistem e-learning, kuis online, atau portal kursus untuk lembaga pendidikan atau komunitas belajar.</p>
+        <div class="service-price-badge">Mulai dari Rp 200.000</div>
+        <button class="btn-service-detail" onclick="openServiceModal('edukasi')">Lihat Detail & Contoh →</button>
+      </div>
+
+      <!-- ECOMMERCE -->
+      <div class="service-card reveal" data-service="ecommerce">
+        <div class="service-icon">🛒</div>
+        <h3>E-Commerce</h3>
+        <p>Toko online lengkap dengan katalog produk, keranjang belanja, dan sistem pembayaran terintegrasi.</p>
+        <div class="service-price-badge">Mulai dari Rp 1.000.000</div>
+        <button class="btn-service-detail" onclick="openServiceModal('ecommerce')">Lihat Detail & Contoh →</button>
+      </div>
+
+      <!-- LANDING PAGE -->
+      <div class="service-card reveal" data-service="landing">
+        <div class="service-icon">📣</div>
+        <h3>Landing Page</h3>
+        <p>Halaman promosi yang menarik dan efektif untuk meningkatkan penjualan produk atau layanan Anda.</p>
+        <div class="service-price-badge">Mulai dari Rp 50.000</div>
+        <button class="btn-service-detail" onclick="openServiceModal('landing')">Lihat Detail & Contoh →</button>
+      </div>
+
+      <!-- KONSULTAN -->
+      <div class="service-card reveal" data-service="konsultan">
+        <div class="service-icon">🧑‍💼</div>
+        <h3>Konsultan IT</h3>
+        <p>Konsultasi gratis untuk kebutuhan digital Anda — kami siap membantu menemukan solusi terbaik.</p>
+        <div class="service-price-badge">Gratis Konsultasi</div>
+        <button class="btn-service-detail" onclick="openServiceModal('konsultan')">Lihat Detail & Contoh →</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================
+       HARGA
+  ============================= -->
+  <section class="section section-alt" id="harga">
+    <div class="section-header reveal">
+      <div class="section-tag">Harga Terjangkau</div>
+      <h2 class="section-title">Daftar Harga</h2>
+      <p class="section-desc">Harga transparan, tanpa biaya tersembunyi. Sesuaikan dengan kebutuhan dan budget Anda.</p>
+    </div>
+
+    <div class="price-grid">
+
+      <div class="price-card reveal">
+        <div class="price-card-header">
+          <div class="price-category">Undangan Digital</div>
+          <div class="price-name">Basic Invitation</div>
+          <div class="price-amount"><span class="price-currency">Rp</span><span class="price-num">75K</span><span class="price-period">/ undangan</span></div>
+        </div>
+        <hr class="price-divider" />
+        <ul class="price-features">
+          <li>Desain template pilihan</li>
+          <li>Informasi acara lengkap</li>
+          <li>Musik latar romantis</li>
+          <li>Countdown timer</li>
+          <li class="no">RSVP online</li>
+          <li class="no">Galeri foto</li>
+          <li class="no">Peta lokasi</li>
+        </ul>
+        <a href="#kontak" class="btn-price btn-price-outline">Pesan Sekarang</a>
+      </div>
+
+      <div class="price-card popular reveal">
+        <div class="popular-badge">⭐ Paling Populer</div>
+        <div class="price-card-header">
+          <div class="price-category">Website Profil</div>
+          <div class="price-name">Business Pro</div>
+          <div class="price-amount"><span class="price-currency">Rp</span><span class="price-num">500K</span><span class="price-period">/ proyek</span></div>
+        </div>
+        <hr class="price-divider" />
+        <ul class="price-features">
+          <li>Desain custom eksklusif</li>
+          <li>Halaman profil &amp; layanan</li>
+          <li>Formulir kontak &amp; pesan</li>
+          <li>Responsif HP &amp; komputer</li>
+          <li>Optimasi kecepatan</li>
+          <li>Gratis domain .com 1 tahun</li>
+          <li class="no">E-commerce / toko online</li>
+        </ul>
+        <a href="#kontak" class="btn-price btn-price-solid">Pesan Sekarang</a>
+      </div>
+
+      <div class="price-card reveal">
+        <div class="price-card-header">
+          <div class="price-category">Toko Online</div>
+          <div class="price-name">E-Commerce Full</div>
+          <div class="price-amount"><span class="price-currency">Rp</span><span class="price-num">1.5Jt</span><span class="price-period">/ proyek</span></div>
+        </div>
+        <hr class="price-divider" />
+        <ul class="price-features">
+          <li>Semua fitur Business Pro</li>
+          <li>Katalog produk tak terbatas</li>
+          <li>Keranjang &amp; checkout</li>
+          <li>Integrasi pembayaran</li>
+          <li>Dashboard admin</li>
+          <li>Manajemen stok &amp; pesanan</li>
+          <li>Support 3 bulan gratis</li>
+        </ul>
+        <a href="#kontak" class="btn-price btn-price-outline">Pesan Sekarang</a>
+      </div>
+
+      <div class="price-card reveal">
+        <div class="price-card-header">
+          <div class="price-category">Aplikasi / Apps</div>
+          <div class="price-name">Custom App</div>
+          <div class="price-amount"><span class="price-currency">Rp</span><span class="price-num">Nego</span></div>
+        </div>
+        <hr class="price-divider" />
+        <ul class="price-features">
+          <li>Konsultasi gratis kebutuhan</li>
+          <li>Desain UI/UX profesional</li>
+          <li>Pengembangan full-stack</li>
+          <li>Testing &amp; quality assurance</li>
+          <li>Deployment &amp; hosting</li>
+          <li>Maintenance &amp; update</li>
+          <li>Harga sesuai kompleksitas</li>
+        </ul>
+        <a href="#kontak" class="btn-price btn-price-outline">Konsultasi Gratis</a>
+      </div>
+
+    </div>
+    <p class="price-note">
+      💡 Semua harga dapat disesuaikan.
+      <a href="#kontak">Hubungi kami</a> untuk penawaran khusus!
+    </p>
+  </section>
+
+  <!-- ============================
+       KALKULATOR HARGA
+  ============================= -->
+  <section class="section calc-section" id="kalkulator">
+    <div class="section-header reveal">
+      <div class="section-tag">Estimasi Otomatis</div>
+      <h2 class="section-title" style="color:var(--cream);">Kalkulator Harga</h2>
+      <p class="section-desc" style="color:rgba(255,255,255,0.6);">Jawab beberapa pertanyaan mudah dan dapatkan estimasi harga instan!</p>
+    </div>
+
+    <div class="calculator-wrapper reveal">
+
+      <!-- STEPS LEFT -->
+      <div class="calc-steps-panel">
+
+        <!-- Step 1: Jenis Layanan -->
+        <div class="calc-step" id="step-1">
+          <div class="calc-step-header">
+            <span class="calc-step-num">1</span>
+            <span class="calc-step-title">Mau buat apa?</span>
+          </div>
+          <div class="calc-options-grid">
+            <button class="calc-opt-big selected" data-key="type" data-val="undangan" onclick="calcSelect(this)">
+              <span class="calc-opt-icon">💌</span>
+              <span class="calc-opt-label">Undangan<br/>Digital</span>
+              <span class="calc-opt-price">Mulai 75rb</span>
+            </button>
+            <button class="calc-opt-big" data-key="type" data-val="website" onclick="calcSelect(this)">
+              <span class="calc-opt-icon">🌐</span>
+              <span class="calc-opt-label">Website<br/>Profil</span>
+              <span class="calc-opt-price">Mulai 100rb</span>
+            </button>
+            <button class="calc-opt-big" data-key="type" data-val="landing" onclick="calcSelect(this)">
+              <span class="calc-opt-icon">📣</span>
+              <span class="calc-opt-label">Landing<br/>Page</span>
+              <span class="calc-opt-price">Mulai 50rb</span>
+            </button>
+            <button class="calc-opt-big" data-key="type" data-val="ecommerce" onclick="calcSelect(this)">
+              <span class="calc-opt-icon">🛒</span>
+              <span class="calc-opt-label">Toko<br/>Online</span>
+              <span class="calc-opt-price">Mulai 1 jt</span>
+            </button>
+            <button class="calc-opt-big" data-key="type" data-val="apps" onclick="calcSelect(this)">
+              <span class="calc-opt-icon">📱</span>
+              <span class="calc-opt-label">Aplikasi/<br/>Apps</span>
+              <span class="calc-opt-price">Mulai 500rb</span>
+            </button>
+            <button class="calc-opt-big" data-key="type" data-val="edukasi" onclick="calcSelect(this)">
+              <span class="calc-opt-icon">🎓</span>
+              <span class="calc-opt-label">Platform<br/>Edukasi</span>
+              <span class="calc-opt-price">Mulai 200rb</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Step 2: Tampilan / Style -->
+        <div class="calc-step" id="step-2">
+          <div class="calc-step-header">
+            <span class="calc-step-num">2</span>
+            <span class="calc-step-title">Seberapa lengkap tampilannya?</span>
+          </div>
+          <p class="calc-step-hint">Klik salah satu untuk melihat contoh tampilannya di sebelah kanan 👉</p>
+          <div class="calc-style-options">
+
+            <button class="calc-style-btn selected" data-key="level" data-val="simple" onclick="calcSelectStyle(this)">
+              <div class="calc-style-preview simple-preview">
+                <div class="prev-bar"></div>
+                <div class="prev-block"></div>
+                <div class="prev-lines"><div></div><div></div></div>
+                <div class="prev-btn"></div>
+              </div>
+              <div class="calc-style-info">
+                <strong>🟢 Sederhana</strong>
+                <span>1 halaman, desain bersih, cocok untuk kebutuhan dasar. Contoh: undangan simpel, profil singkat.</span>
+              </div>
+            </button>
+
+            <button class="calc-style-btn" data-key="level" data-val="medium" onclick="calcSelectStyle(this)">
+              <div class="calc-style-preview medium-preview">
+                <div class="prev-bar"></div>
+                <div class="prev-hero"></div>
+                <div class="prev-cards"><div></div><div></div><div></div></div>
+                <div class="prev-footer"></div>
+              </div>
+              <div class="calc-style-info">
+                <strong>🟡 Menengah</strong>
+                <span>2–5 halaman, animasi ringan, galeri foto, formulir kontak. Cocok untuk website bisnis.</span>
+              </div>
+            </button>
+
+            <button class="calc-style-btn" data-key="level" data-val="complex" onclick="calcSelectStyle(this)">
+              <div class="calc-style-preview complex-preview">
+                <div class="prev-bar dark"></div>
+                <div class="prev-hero-big"></div>
+                <div class="prev-grid"><div></div><div></div><div></div><div></div></div>
+                <div class="prev-footer dark"></div>
+              </div>
+              <div class="calc-style-info">
+                <strong>🔴 Lengkap</strong>
+                <span>5+ halaman, animasi penuh, fitur canggih, database, dashboard. Cocok untuk bisnis serius.</span>
+              </div>
+            </button>
+
+          </div>
+        </div>
+
+        <!-- Step 3: Fitur Tambahan -->
+        <div class="calc-step" id="step-3">
+          <div class="calc-step-header">
+            <span class="calc-step-num">3</span>
+            <span class="calc-step-title">Fitur apa yang dibutuhkan?</span>
+          </div>
+          <p class="calc-step-hint">Pilih satu atau lebih fitur yang Anda inginkan:</p>
+          <div class="calc-extras-grid">
+            <label class="calc-extra-item">
+              <input type="checkbox" data-extra="wa" onchange="updateCalc()" />
+              <span class="extra-icon">💬</span>
+              <span class="extra-label">Tombol WhatsApp</span>
+              <span class="extra-price">+50rb</span>
+            </label>
+            <label class="calc-extra-item">
+              <input type="checkbox" data-extra="maps" onchange="updateCalc()" />
+              <span class="extra-icon">🗺️</span>
+              <span class="extra-label">Peta Lokasi</span>
+              <span class="extra-price">+75rb</span>
+            </label>
+            <label class="calc-extra-item">
+              <input type="checkbox" data-extra="gallery" onchange="updateCalc()" />
+              <span class="extra-icon">🖼️</span>
+              <span class="extra-label">Galeri Foto</span>
+              <span class="extra-price">+100rb</span>
+            </label>
+            <label class="calc-extra-item">
+              <input type="checkbox" data-extra="payment" onchange="updateCalc()" />
+              <span class="extra-icon">💳</span>
+              <span class="extra-label">Pembayaran Online</span>
+              <span class="extra-price">+250rb</span>
+            </label>
+            <label class="calc-extra-item">
+              <input type="checkbox" data-extra="admin" onchange="updateCalc()" />
+              <span class="extra-icon">⚙️</span>
+              <span class="extra-label">Panel Admin</span>
+              <span class="extra-price">+400rb</span>
+            </label>
+            <label class="calc-extra-item">
+              <input type="checkbox" data-extra="seo" onchange="updateCalc()" />
+              <span class="extra-icon">🔍</span>
+              <span class="extra-label">SEO (Mudah Ditemukan Google)</span>
+              <span class="extra-price">+150rb</span>
+            </label>
+            <label class="calc-extra-item">
+              <input type="checkbox" data-extra="rsvp" onchange="updateCalc()" />
+              <span class="extra-icon">✅</span>
+              <span class="extra-label">Form RSVP / Konfirmasi</span>
+              <span class="extra-price">+100rb</span>
+            </label>
+            <label class="calc-extra-item">
+              <input type="checkbox" data-extra="chat" onchange="updateCalc()" />
+              <span class="extra-icon">💬</span>
+              <span class="extra-label">Live Chat</span>
+              <span class="extra-price">+200rb</span>
+            </label>
+          </div>
+        </div>
+
+      </div><!-- end calc-steps-panel -->
+
+      <!-- PREVIEW RIGHT -->
+      <div class="calc-preview-panel">
+        <div class="calc-preview-screen" id="calcPreviewScreen">
+          <!-- diisi JS -->
+        </div>
+        <div class="calc-result-box">
+          <div class="calc-result-label">Estimasi Harga Mulai Dari</div>
+          <div class="calc-result-price" id="calcPrice">Rp 75.000</div>
+          <div class="calc-result-note">*Estimasi awal. Harga final setelah konsultasi gratis.</div>
+          <a href="#kontak" class="btn-primary calc-cta-btn">📩 Minta Penawaran Resmi</a>
+        </div>
+      </div>
+
+    </div><!-- end calculator-wrapper -->
+  </section>
+
+  <!-- ============================
+       PROSES KERJA
+  ============================= -->
+  <section class="section section-alt" id="proses">
+    <div class="section-header reveal">
+      <div class="section-tag">Cara Kerja Kami</div>
+      <h2 class="section-title">Proses yang Mudah</h2>
+      <p class="section-desc">Tidak perlu pusing! Kami memandu Anda dari awal hingga proyek selesai.</p>
+    </div>
+    <div class="process-steps">
+      <div class="process-step reveal">
+        <div class="step-num">1</div>
+        <div class="step-content">
+          <h4>💬 Hubungi &amp; Konsultasi</h4>
+          <p>Chat WhatsApp atau isi formulir. Ceritakan kebutuhan Anda — kami siap mendengarkan tanpa biaya apapun.</p>
+        </div>
+      </div>
+      <div class="process-step reveal">
+        <div class="step-num">2</div>
+        <div class="step-content">
+          <h4>📋 Diskusi &amp; Penawaran</h4>
+          <p>Kami memahami kebutuhan lalu memberikan penawaran harga dan estimasi waktu yang jelas.</p>
+        </div>
+      </div>
+      <div class="process-step reveal">
+        <div class="step-num">3</div>
+        <div class="step-content">
+          <h4>✅ Persetujuan &amp; DP</h4>
+          <p>Setelah setuju, proses pengerjaan dimulai dengan pembayaran uang muka 50%.</p>
+        </div>
+      </div>
+      <div class="process-step reveal">
+        <div class="step-num">4</div>
+        <div class="step-content">
+          <h4>🎨 Pengerjaan &amp; Revisi</h4>
+          <p>Tim kami mengerjakan proyek Anda. Anda bisa memberi masukan dan kami siap revisi hingga puas.</p>
+        </div>
+      </div>
+      <div class="process-step reveal">
+        <div class="step-num">5</div>
+        <div class="step-content">
+          <h4>🚀 Selesai &amp; Pelunasan</h4>
+          <p>Proyek diserahkan. Lakukan pelunasan 50% sisanya dan nikmati produk digital impian Anda!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       TESTIMONI
+  ============================= -->
+  <section class="section" id="testimoni">
+    <div class="section-header reveal">
+      <div class="section-tag">Kata Mereka</div>
+      <h2 class="section-title">Testimoni Klien</h2>
+      <p class="section-desc">Kepuasan klien adalah prioritas utama kami.</p>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testi-card reveal">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"Undangan digitalnya cantik dan sesuai banget! Teman-teman saya pada tanya bikin dimana. Prosesnya cepat dan tim Jeiv Studio sangat sabar menjelaskan ke saya yang awam."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">SR</div>
+          <div><div class="testi-name">Sri Rahayu</div><div class="testi-role">Pengantin • Terisi</div></div>
+        </div>
+      </div>
+      <div class="testi-card reveal">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"Website bisnis catering saya jadi lebih profesional dan bagus, omzet naik signifikan. Jeiv Studio sangat helpful, bahkan mengajarkan cara kelola website sendiri!"</p>
+        <div class="testi-author">
+          <div class="testi-avatar">BN</div>
+          <div><div class="testi-name">Bibinah</div><div class="testi-role">Pemilik Home Industry Catering • Rajasinga</div></div>
+        </div>
+      </div>
+      <div class="testi-card reveal">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"Harga nya terjangkau banget untuk kualitas yang diberikan. Landing page aku selesai dalam 3 hari dan hasilnya melebihi harapan aku. Recommended!"</p>
+        <div class="testi-author">
+          <div class="testi-avatar">DM</div>
+          <div><div class="testi-name">Maulana</div><div class="testi-role">Online Seller • Indramayu</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       FAQ
+  ============================= -->
+  <section class="section section-alt" id="faq">
+    <div class="section-header reveal">
+      <div class="section-tag">Pertanyaan Umum</div>
+      <h2 class="section-title">FAQ</h2>
+      <p class="section-desc">Ada pertanyaan? Kami siap menjawab!</p>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item reveal" onclick="toggleFaq(this)">
+        <div class="faq-q">Apakah saya harus mengerti teknologi untuk menggunakan layanan ini?</div>
+        <div class="faq-a">Tidak sama sekali! Kami dirancang khusus untuk melayani siapapun, termasuk yang belum familiar dengan teknologi. Tim kami akan memandu Anda dari awal hingga akhir dengan bahasa yang mudah dipahami.</div>
+      </div>
+      <div class="faq-item reveal" onclick="toggleFaq(this)">
+        <div class="faq-q">Berapa lama proses pembuatan website?</div>
+        <div class="faq-a">Tergantung jenis proyek. Undangan digital selesai 1–7 hari kerja. Website profil 5–14 hari. E-commerce 14–21 hari. Aplikasi custom bervariasi sesuai kompleksitas. Kami selalu memberikan estimasi waktu yang jelas di awal.</div>
+      </div>
+      <div class="faq-item reveal" onclick="toggleFaq(this)">
+        <div class="faq-q">Apakah ada biaya tambahan setelah proyek selesai?</div>
+        <div class="faq-a">Untuk biaya tambahan setelah proyek selesai hanya ada di layanan layanan tertentu, jika layanan digital seperti undangan digital dan landing page tidak memerlukan biaya tambahan tetapi untuk beberapa layanan lain akan kita informasikan secara transparan terutama untuk biaya hosting dan domain.</div>
+      </div>
+      <div class="faq-item reveal" onclick="toggleFaq(this)">
+        <div class="faq-q">Berapa kali saya bisa minta revisi?</div>
+        <div class="faq-a">Kami memberikan revisi gratis sebanyak 3 kali. Jika masih ada perubahan setelahnya, kami kenakan biaya yang sangat terjangkau. Kami ingin Anda puas dengan hasilnya!</div>
+      </div>
+      <div class="faq-item reveal" onclick="toggleFaq(this)">
+        <div class="faq-q">Bagaimana cara pembayarannya?</div>
+        <div class="faq-a">Pembayaran dilakukan 2 tahap: 40% di awal sebagai tanda jadi, dan 60% sisanya setelah proyek selesai dan Anda puas. Kami menerima transfer bank, GoPay, OVO, Dana, dan berbagai metode pembayaran lain.</div>
+      </div>
+      <div class="faq-item reveal" onclick="toggleFaq(this)">
+        <div class="faq-q">Apakah bisa minta desain sesuai keinginan sendiri?</div>
+        <div class="faq-a">Tentu! Justru kami sangat menganjurkan Anda menyampaikan referensi atau gambaran yang diinginkan. Semakin detail masukan Anda, semakin sempurna hasilnya.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <div class="cta-banner reveal">
+    <div class="cta-banner-text">
+      <h2>Siap mewujudkan <span>impian digital</span> Anda?</h2>
+      <p>Konsultasi gratis, tanpa tekanan, tanpa syarat.</p>
+    </div>
+    <a href="#kontak" class="btn-cta">💬 Hubungi Kami Sekarang</a>
+  </div>
+
+  <!-- ============================
+       KONTAK
+  ============================= -->
+  <section class="section" id="kontak">
+    <div class="section-header reveal">
+      <div class="section-tag">Hubungi Kami</div>
+      <h2 class="section-title">Mari Bicara!</h2>
+      <p class="section-desc">Ceritakan kebutuhan Anda dan dapatkan penawaran spesial terbaik dari kami.</p>
+    </div>
+    <div class="contact-grid">
+
+      <div class="contact-info reveal">
+        <h3>Kami Siap<br />Membantu Anda</h3>
+        <p>Jangan ragu menghubungi kami kapan saja. Konsultasi gratis, tanpa syarat, tanpa tekanan.</p>
+        <div class="contact-items">
+          <div class="contact-item">
+            <div class="contact-item-icon">📱</div>
+            <div class="contact-item-text">
+              <strong>WhatsApp</strong>
+              <a href="https://wa.me/6285795245741" target="_blank">+62 857-9524-5741</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon">📧</div>
+            <div class="contact-item-text">
+              <strong>Email</strong>
+              <span>rizkymaulanazein@gmail.com</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon">📍</div>
+            <div class="contact-item-text">
+              <strong>Lokasi</strong>
+              <span>Indramayu, Indonesia (Remote &amp; Onsite)</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon">⏰</div>
+            <div class="contact-item-text">
+              <strong>Jam Operasional</strong>
+              <span>Senin–Sabtu, 08.00–21.00 WIB</span>
+            </div>
+          </div>
+        </div>
+        <a href="https://wa.me/6285795245741" target="_blank" class="btn-wa-big">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Chat WhatsApp Sekarang
+        </a>
+      </div>
+
+      <div class="reveal">
+        <form class="contact-form" onsubmit="submitForm(event)" id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nama">Nama Lengkap</label>
+              <input type="text" id="nama" placeholder="Contoh: Budi Santoso" required />
+            </div>
+            <div class="form-group">
+              <label for="hp">Nomor HP / WA</label>
+              <input type="tel" id="hp" placeholder="08xx-xxxx-xxxx" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="layanan">Layanan yang Diinginkan</label>
+            <select id="layanan">
+              <option value="">-- Pilih Layanan --</option>
+              <option>Website Profil / Bisnis</option>
+              <option>Undangan Digital</option>
+              <option>E-Commerce / Toko Online</option>
+              <option>Aplikasi / Apps</option>
+              <option>Landing Page</option>
+              <option>Platform Edukasi</option>
+              <option>Games</option>
+              <option>Konsultan IT</option>
+              <option>Lainnya</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="pesan">Ceritakan Kebutuhan Anda</label>
+            <textarea id="pesan" placeholder="Contoh: Saya ingin buat website toko online untuk jualan baju. Tidak terlalu paham teknologi tapi ingin yang mudah dikelola..." required></textarea>
+          </div>
+          <div class="form-group">
+            <label for="budget">Estimasi Budget (Opsional)</label>
+            <select id="budget">
+              <option value="">-- Pilih Budget --</option>
+              <option>Di bawah Rp 500.000</option>
+              <option>Rp 500.000 – Rp 1.000.000</option>
+              <option>Rp 1.000.000 – Rp 5.000.000</option>
+              <option>Di atas Rp 5.000.000</option>
+              <option>Belum tahu / minta penawaran</option>
+            </select>
+          </div>
+          <button type="submit" class="btn-submit" id="submitBtn">
+            🚀 Kirim Pesan &amp; Dapatkan Penawaran
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================
+       FOOTER
+  ============================= -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-col-brand">
+        <div class="footer-brand">Jeiv Studio</div>
+        <p class="footer-desc">Solusi digital terpercaya untuk bisnis dan kebutuhan pribadi Anda. Mudah, cepat, dan terjangkau.</p>
+        <div class="footer-socials">
+          <a href="#" aria-label="Facebook">📘</a>
+          <a href="#" aria-label="Instagram">📸</a>
+          <a href="https://wa.me/6285795245741" target="_blank" aria-label="WhatsApp">💬</a>
+          <a href="#" aria-label="YouTube">🎬</a>
+          <a href="#" aria-label="TikTok">🎵</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-heading">Layanan</div>
+        <ul class="footer-links">
+          <li><a href="#layanan">Website</a></li>
+          <li><a href="#layanan">Undangan Digital</a></li>
+          <li><a href="#layanan">E-Commerce</a></li>
+          <li><a href="#layanan">Apps / Aplikasi</a></li>
+          <li><a href="#layanan">Konsultan IT</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-heading">Perusahaan</div>
+        <ul class="footer-links">
+          <li><a href="#harga">Harga</a></li>
+          <li><a href="#kalkulator">Kalkulator</a></li>
+          <li><a href="#proses">Cara Kerja</a></li>
+          <li><a href="#testimoni">Testimoni</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#kontak">Kontak</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2025 Jeiv Studio. Dibuat dengan ❤️ untuk solusi digital Indonesia.
+    </div>
+  </footer>
+
+  <!-- ============================
+       FLOATING BUTTONS
+  ============================= -->
+  <a href="https://wa.me/6285795245741" target="_blank" class="wa-float" aria-label="WhatsApp">
+    <span class="wa-tooltip">Chat WhatsApp</span>
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <button class="back-to-top" id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Kembali ke atas">↑</button>
+
+  <!-- ============================
+       MODAL LAYANAN DETAIL
+  ============================= -->
+  <div class="modal-overlay" id="serviceModal" onclick="closeModalOutside(event,'serviceModal')">
+    <div class="modal" id="serviceModalContent">
+      <button class="modal-close" onclick="closeModal('serviceModal')">✕</button>
+      <div id="serviceModalBody"><!-- filled by JS --></div>
+    </div>
+  </div>
+
+  <!-- TOAST -->
+  <div class="toast" id="toast">✅ Pesan berhasil dikirim! Kami akan segera menghubungi Anda.</div>
+
+  <script src="jeiv.studio.js"></script>
+</body>
+</html>
