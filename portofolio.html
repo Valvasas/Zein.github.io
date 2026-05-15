@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rizky Maulana Zein — Software Engineer & Web Developer</title>
+    <meta name="description" content="Portofolio profesional Rizky Maulana Zein — Software Engineer & Web Developer yang mengutamakan kualitas, estetika, dan fungsionalitas.">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="portofolio.css">
+</head>
+<body>
+
+    <!-- =====================================
+         LOADING SCREEN
+         ===================================== -->
+    <div id="loading-screen">
+        <div class="loading-logo">Rizky<span>Maulana Zein.</span></div>
+        <div class="loading-bar-bg">
+            <div class="loading-bar-fill"></div>
+        </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- =====================================
+         NAVBAR
+         ===================================== -->
+    <nav id="navbar">
+        <a href="#home" class="logo">Rizky<span>Maulana Zein.</span></a>
+        <ul class="nav-links">
+            <li><a href="#home">Beranda</a></li>
+            <li><a href="#profile-intro">Profil</a></li>
+            <li><a href="#skills">Keahlian</a></li>
+            <li><a href="#projects">Karya</a></li>
+            <li><a href="#services">Layanan</a></li>
+            <li><a href="#contact">Kontak</a></li>
+        </ul>
+        <div class="hamburger"><i class="fas fa-bars"></i></div>
+    </nav>
+
+    <!-- =====================================
+         HERO / HEADER SECTION
+         ===================================== -->
+    <header id="home">
+        <div class="hero-particles"></div>
+        <div class="hero-content fade-up">
+            <p class="greeting">Portofolio Profesional · 2026</p>
+            <h1 class="name">Rizky <span class="highlight">Maulana Zein</span></h1>
+            <h2 class="title">Software Engineer &amp; Web Developer.</h2>
+            <p class="hero-tagline">Menciptakan Pengalaman Digital yang Elegan &amp; Fungsional</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-gold">Lihat Karya</a>
+                <a href="#contact" class="btn">Hubungi Saya</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- =====================================
+         PROFILE INTRO (Foto + Tech Badges)
+         ===================================== -->
+    <section id="profile-intro">
+        <!-- Kolom Foto -->
+        <div class="profile-intro-photo fade-up">
+            <div class="photo-frame">
+                <!-- Tech badges floating -->
+                <div class="tech-orbit"></div>
+                <!-- Frame foto -->
+                <div class="photo-placeholder">
+                    <img id="profilePhotoMain" src="asset/My.jpg" alt="Foto Rizky Maulana Zein">
+                </div>
+            </div>
+        </div>
+
+        <!-- Kolom Teks -->
+        <div class="profile-intro-text fade-up delay-1">
+            <span class="section-subtitle">Tentang Saya</span>
+            <h2>Dedikasi dalam <em>Setiap Baris Kode</em></h2>
+            <p>Saya adalah seorang <strong>Software Engineer &amp; Web Developer</strong> yang berfokus pada pembuatan produk digital berkualitas tinggi. Setiap proyek yang saya kerjakan didasari oleh logika yang kuat dan estetika yang tidak berlebihan.</p>
+            <p>Dari landing page yang memukau hingga sistem yang kompleks, saya percaya bahwa kode yang baik bukan hanya yang berjalan dengan benar — melainkan yang juga nyaman dibaca dan dirawat.</p>
+
+            <div class="profile-stats">
+                <div class="stat-item">
+                    <span class="stat-number" data-target="4" data-suffix="+">0+</span>
+                    <span class="stat-label">Proyek Selesai</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="4" data-suffix=" Bln">0 Thn</span>
+                    <span class="stat-label">Pengalaman</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="8" data-suffix="+">0+</span>
+                    <span class="stat-label">Teknologi</span>
+                </div>
+            </div>
+
+            <div style="display:flex; gap: 15px; flex-wrap: wrap;">
+                <a href="#projects" class="btn btn-gold">Lihat Portofolio</a>
+                <a href="mailto:rizkymaulanazein@gmail.com" class="btn">Kontak Saya</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- =====================================
+         SKILLS / KEAHLIAN SECTION
+         ===================================== -->
+    <section id="skills">
+        <div class="section-header fade-up">
+            <p class="section-subtitle">Teknologi &amp; Keahlian</p>
+            <h2 class="section-title">Bahasa Kode yang Saya Kuasai</h2>
+            <p class="section-desc">Menggunakan teknologi modern untuk menciptakan solusi yang scalable dan maintainable.</p>
+        </div>
+
+        <div class="skills-categories fade-up">
+
+            <!-- Frontend -->
+            <div>
+                <h3 class="skill-category-title">
+                    <i class="fas fa-paint-brush"></i> Frontend Development
+                </h3>
+                <div class="skills-grid">
+                    <div class="skill-tag">
+                        <span class="skill-icon">🌐</span> HTML5
+                        <div class="skill-bar-wrap"><div class="skill-bar-bg"><div class="skill-bar-fill" data-level="95"></div></div></div>
+                    </div>
+                    <div class="skill-tag">
+                        <span class="skill-icon">🎨</span> CSS3 / SCSS
+                        <div class="skill-bar-wrap"><div class="skill-bar-bg"><div class="skill-bar-fill" data-level="90"></div></div></div>
+                    </div>
+                    <div class="skill-tag">
+                        <span class="skill-icon">⚡</span> JavaScript (ES6+)
+                        <div class="skill-bar-wrap"><div class="skill-bar-bg"><div class="skill-bar-fill" data-level="85"></div></div></div>
+                    </div>
+                    <div class="skill-tag">
+                        <span class="skill-icon">📱</span> Responsive Design
+                        <div class="skill-bar-wrap"><div class="skill-bar-bg"><div class="skill-bar-fill" data-level="92"></div></div></div>
+                    </div>
+                    <div class="skill-tag">
+                        <span class="skill-icon">🎯</span> UI/UX Principles
+                        <div class="skill-bar-wrap"><div class="skill-bar-bg"><div class="skill-bar-fill" data-level="80"></div></div></div>
+                    </div>
+                    <div class="skill-tag">
+                        <span class="skill-icon">🔥</span> Tailwind CSS
+                        <div class="skill-bar-wrap"><div class="skill-bar-bg"><div class="skill-bar-fill" data-level="78"></div></div></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Backend -->
+            <div>
+                <h3 class="skill-category-title">
+                    <i class="fas fa-server"></i> Backend &amp; Database
+                </h3>
+                <div class="skills-grid">
+                    <div class="skill-tag">
+                        <span class="skill-icon">🟢</span> Node.js
+                        <div class="skill-bar-wrap"><div class="skill-bar-bg"><div class="skill-bar-fill" data-level="75"></div></div></div>
+                    </div>
+                    <div class="skill-tag">
+                        <span class="skill-icon">🐘</span> PHP
+                        <div class="skill-bar-wrap"><div class="skill-bar-bg"><div class="skill-bar-fill" data-level="70"></div></div></div>
+                    </div>
+                    <div class="skill-tag">
+                        <span class="skill-icon">🗄️</span> MySQL / SQL
+                        <div class="skill-bar-wrap"><div class="skill-bar-bg"><div class="skill-bar-fill" data-level="82"></div></div></div>
+                    </div>
+                    <div class="skill-tag">
+                        <span class="skill-icon">🍃</span> MongoDB
+                        <div class="skill-bar-wrap"><div class="skill-bar-bg"><div class="skill-bar-fill" data-level="65"></div></div></div>
+                    </div>
+                    <div class="skill-tag">
+                        <span class="skill-icon">🔴</span> Firebase
+                        <div class="skill-bar-wrap"><div class="skill-bar-bg"><div class="skill-bar-fill" data-level="72"></div></div></div>
+                    </div>
+                    <div class="skill-tag">
+                        <span class="skill-icon">🔗</span> REST API
+                        <div class="skill-bar-wrap"><div class="skill-bar-bg"><div class="skill-bar-fill" data-level="80"></div></div></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tools -->
+            <div>
+                <h3 class="skill-category-title">
+                    <i class="fas fa-tools"></i> Tools &amp; Workflow
+                </h3>
+                <div class="skills-grid">
+                    <div class="skill-tag"><span class="skill-icon">🐱</span> Git / GitHub</div>
+                    <div class="skill-tag"><span class="skill-icon">🐳</span> Docker (Basic)</div>
+                    <div class="skill-tag"><span class="skill-icon">🎨</span> Figma / Canva</div>
+                    <div class="skill-tag"><span class="skill-icon">💻</span> VS Code</div>
+                    <div class="skill-tag"><span class="skill-icon">📦</span> npm / yarn</div>
+                    <div class="skill-tag"><span class="skill-icon">☁️</span> Hosting (cPanel, VPS)</div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- =====================================
+         PROJECTS / KARYA SECTION
+         ===================================== -->
+    <section id="projects">
+        <div class="section-header fade-up">
+            <p class="section-subtitle">Koleksi Proyek</p>
+            <h2 class="section-title">Karya Terpilih </h2>
+            <p class="section-desc">Setiap proyek mencerminkan komitmen dan profesionalisme terhadap kualitas, performa, dan keindahan visual.</p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="project-filters fade-up delay-1">
+            <button class="filter-btn active" data-filter="all">Semua</button>
+            <button class="filter-btn" data-filter="web">Website</button>
+            <button class="filter-btn" data-filter="system">Sistem</button>
+            <button class="filter-btn" data-filter="ecommerce">E-Commerce</button>
+            <button class="filter-btn" data-filter="undangan">Undangan</button>
+        </div>
+
+        <div class="project-grid fade-up delay-2">
+
+            <!-- Proyek 1 -->
+            <div class="project-card" data-category="web"
+                onclick="openModal({
+                    category: 'Website Sekolah',
+                    title: 'Website Resmi SMKN 1 Terisi',
+                    img: ['asset/website.png', 'asset/website.png', 'asset/website.png'],
+                    desc: 'Website resmi sekolah dengan desain gold navy blue yang menekankan kemewahan dan profesionalisme. Dilengkapi dengan sistem informasi yang lengkap, galeri kegiatan, jadwal pelajaran, dan berbagai layanan digital untuk siswa, guru, dan orang tua. Dibangun dengan mempertimbangkan performa tinggi dan aksesibilitas penuh di semua perangkat.',
+                    tech: ['HTML5', 'CSS3', 'JavaScript', 'PHP', 'MySQL'],
+                    liveUrl: '#',
+                    githubUrl: '#'
+                })">
+                <div class="project-img-wrapper">
+                    <img src="asset/website.png" alt="Website SMKN 1 Terisi" class="project-img">
+                    <div class="project-overlay">
+                        <div class="overlay-content">
+                            <a class="view-btn">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <div class="project-tags">
+                        <span class="project-tag">Website</span>
+                        <span class="project-tag">Institusi</span>
+                    </div>
+                    <h3>Website Resmi SMKN 1 Terisi</h3>
+                    <p>Desain gold navy blue yang elegan dengan fitur layanan digital lengkap untuk lingkungan sekolah.</p>
+                    <a class="project-link">Lihat Detail <i class="fas fa-arrow-right" style="margin-left:5px; font-size: 0.65rem;"></i></a>
+                </div>
+            </div>
+
+            <!-- Proyek 2 -->
+            <div class="project-card" data-category="system"
+                onclick="openModal({
+                    category: 'Sistem Manajemen',
+                    title: 'Platform Pencatatan Keterlambatan Siswa',
+                    img: ['asset/edugate.png', 'asset/edugate.png'],
+                    desc: 'Sistem digital komprehensif untuk merekam dan mengelola data keterlambatan siswa secara real-time. Dilengkapi dengan dashboard analitik, laporan harian/bulanan otomatis, notifikasi ke orang tua via WhatsApp, dan fitur ekspor data ke Excel. Sistem ini berhasil meningkatkan efisiensi pencatatan lebih dari 80% dibanding cara manual.',
+                    tech: ['PHP', 'MySQL', 'JavaScript', 'Bootstrap', 'API WhatsApp'],
+                    liveUrl: '#',
+                    githubUrl: '#'
+                })">
+                <div class="project-img-wrapper">
+                    <img src="asset/edugate.png" alt="EduGate" class="project-img">
+                    <div class="project-overlay">
+                        <div class="overlay-content">
+                            <a class="view-btn">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <div class="project-tags">
+                        <span class="project-tag">Sistem</span>
+                        <span class="project-tag">Pendidikan</span>
+                    </div>
+                    <h3>Platform Pencatatan Keterlambatan Siswa</h3>
+                    <p>Sistem manajemen data keterlambatan dengan dashboard analitik dan notifikasi otomatis.</p>
+                    <a class="project-link">Lihat Detail <i class="fas fa-arrow-right" style="margin-left:5px; font-size: 0.65rem;"></i></a>
+                </div>
+            </div>
+
+            <!-- Proyek 3 -->
+            <div class="project-card" data-category="ecommerce"
+                onclick="openModal({
+                    category: 'E-Commerce',
+                    title: 'Website E-Commerce Catering',
+                    img: ['asset/catering.png'],
+                    desc: 'Platform e-commerce premium untuk bisnis catering yang mengintegrasikan sistem pemesanan real-time, manajemen menu dinamis, dan pelacakan pesanan otomatis untuk meningkatkan efisiensi operasional.',
+                    tech: ['HTML5', 'CSS3', 'JavaScript', 'Node.js', 'Firebase'],
+                    liveUrl: '#',
+                    githubUrl: '#'
+                })">
+                <div class="project-img-wrapper">
+                    <img src="asset/catering.png" alt="E-Commerce Catering" class="project-img">
+                    <div class="project-overlay">
+                        <div class="overlay-content">
+                            <a class="view-btn">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <div class="project-tags">
+                        <span class="project-tag">E-Commerce</span>
+                        <span class="project-tag">UMKM</span>
+                    </div>
+                    <h3>Website E-Commerce Catering</h3>
+                    <p>Platform pemesanan catering online dengan sistem manajemen pesanan yang intuitif dan elegan.</p>
+                    <a class="project-link">Lihat Detail <i class="fas fa-arrow-right" style="margin-left:5px; font-size: 0.65rem;"></i></a>
+                </div>
+            </div>
+
+            <!-- Proyek 4: Undangan Digital -->
+            <div class="project-card" data-category="undangan"
+                onclick="openModal({
+                    category: 'Undangan Digital',
+                    title: 'Undangan Pernikahan Digital Interaktif',
+                    img: ['asset/undangan.png'],
+                    desc: 'Solusi undangan digital modern yang interaktif dengan fitur countdown timer, RSVP online, integrasi Google Maps, dan galeri foto responsif untuk pengalaman tamu yang lebih personal.',
+                    tech: ['HTML5', 'CSS3', 'JavaScript', 'Google Maps API'],
+                    liveUrl: '#',
+                    githubUrl: '#'
+                })">
+               <div class="project-img-wrapper">
+                    <img src="asset/undangan.png" alt="Undangan Pernikahan Digital" class="project-img">
+                    <div class="project-overlay">
+                        <div class="overlay-content">
+                            <a class="view-btn">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div> <!-- Tambahkan tag penutup ini yang hilang -->
+                <div class="project-info">
+                    <div class="project-tags">
+                        <span class="project-tag">Undangan</span>
+                        <span class="project-tag">Interaktif</span>
+                    </div>
+                    <h3>Undangan Pernikahan Digital</h3>
+                    <p>Undangan berbasis web dengan countdown, RSVP, galeri foto, dan peta lokasi interaktif.</p>
+                    <a class="project-link">Lihat Detail <i class="fas fa-arrow-right" style="margin-left:5px; font-size: 0.65rem;"></i></a>
+                </div>
+            </div>
+
+            <!-- Proyek 5: Mini Game -->
+            <div class="project-card" data-category="web"
+                onclick="openModal({
+                    category: 'Game Web',
+                    title: 'Mini Game Kuis Interaktif',
+                    img: ['asset/Cowboy.png'],
+                    desc: 'Aplikasi gamifikasi edukasi yang interaktif, dilengkapi dengan sistem skor real-time, leaderboard, dan berbagai kategori soal untuk meningkatkan keterlibatan pengguna.',
+                    tech: ['HTML5', 'CSS3', 'JavaScript', 'LocalStorage', 'Canvas API'],
+                    liveUrl: '#',
+                    githubUrl: '#'
+                })">
+                <div class="project-img-wrapper">
+                    <img src="asset/Cowboy.png" alt="Mini Game Kuis Interaktif" class="project-img">
+                    <div class="project-overlay">
+                        <div class="overlay-content"><a class="view-btn">Lihat Detail</a></div>
+                    </div>
+                </img>
+                </div>
+                <div class="project-info">
+                    <div class="project-tags">
+                        <span class="project-tag">Game</span>
+                        <span class="project-tag">Edukasi</span>
+                    </div>
+                    <h3>Mini Game Kuis Interaktif</h3>
+                    <p>Game edukasi dengan leaderboard, timer, animasi interaktif, dan berbagai kategori soal.</p>
+                    <a class="project-link">Lihat Detail <i class="fas fa-arrow-right" style="margin-left:5px; font-size: 0.65rem;"></i></a>
+                </div>
+            </div>
+
+            <!-- Proyek 6: Company Profile -->
+            <div class="project-card" data-category="web"
+                onclick="openModal({
+                    category: 'Company Profile',
+                    title: 'Website Profil Perusahaan Modern',
+                    img: ['asset/Company.png'],
+                    desc: 'Website representasi bisnis yang mengutamakan performa dan estetika. Dioptimalkan untuk SEO (Core Web Vitals) dan mendukung fitur dark mode serta desain yang fully responsive.',
+                    tech: ['HTML5', 'CSS3', 'JavaScript', 'PHP', 'MySQL'],
+                    liveUrl: '#',
+                    githubUrl: '#'
+                })">
+                <div class="project-img-wrapper">
+                    <img src="asset/Company.png" alt="Website Profil Perusahaan Modern" class="project-img">
+                    <div class="project-overlay">
+                        <div class="overlay-content"><a class="view-btn">Lihat Detail</a></div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <div class="project-tags">
+                        <span class="project-tag">Web</span>
+                        <span class="project-tag">Perusahaan</span>
+                    </div>
+                    <h3>Website Profil Perusahaan</h3>
+                    <p>Company profile premium dengan optimasi SEO, performa tinggi, dan desain konversional.</p>
+                    <a class="project-link">Lihat Detail <i class="fas fa-arrow-right" style="margin-left:5px; font-size: 0.65rem;"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- =====================================
+         SERVICES / PRODUK DIGITAL
+         ===================================== -->
+    <section id="services">
+        <div class="section-header fade-up">
+            <p class="section-subtitle">Layanan Profesional</p>
+            <h2 class="section-title">Produk Digital yang Bisa Saya Buat</h2>
+            <p class="section-desc">Dari website sederhana hingga sistem kompleks — semuanya dikerjakan dengan standar kualitas tinggi.</p>
+        </div>
+
+        <div class="services-grid fade-up">
+
+            <div class="service-card">
+                <i class="fas fa-envelope-open-heart service-icon"></i>
+                <h3>Undangan Digital</h3>
+                <p>Undangan pernikahan, khitanan, atau acara lainnya berbasis web dengan animasi elegan dan fitur RSVP.</p>
+                <ul class="service-features">
+                    <li>Countdown timer otomatis</li>
+                    <li>RSVP online terintegrasi</li>
+                    <li>Galeri foto pasangan</li>
+                    <li>Pemutar musik latar</li>
+                    <li>Peta lokasi acara</li>
+                </ul>
+                <div class="service-price">Mulai dari Rp 50.000 →</div>
+            </div>
+
+            <div class="service-card">
+                <i class="fas fa-store service-icon"></i>
+                <h3>E-Commerce UMKM</h3>
+                <p>Toko online modern untuk bisnis kecil-menengah dengan sistem pemesanan dan pembayaran yang mudah.</p>
+                <ul class="service-features">
+                    <li>Katalog produk dinamis</li>
+                    <li>Keranjang &amp; checkout online</li>
+                    <li>Dashboard admin lengkap</li>
+                    <li>Integrasi WhatsApp</li>
+                    <li>Laporan penjualan</li>
+                </ul>
+                <div class="service-price">Mulai dari Rp 500.000 →</div>
+            </div>
+
+            <div class="service-card">
+                <i class="fas fa-building service-icon"></i>
+                <h3>Website Perusahaan</h3>
+                <p>Company profile premium yang mencerminkan kredibilitas bisnis Anda dengan desain yang profesional.</p>
+                <ul class="service-features">
+                    <li>Desain premium &amp; modern</li>
+                    <li>Optimasi SEO lengkap</li>
+                    <li>Formulir kontak &amp; lead</li>
+                    <li>Fully responsive</li>
+                    <li>Hosting setup</li>
+                </ul>
+                <div class="service-price">Mulai dari Rp 400.000 →</div>
+            </div>
+
+            <div class="service-card">
+                <i class="fas fa-graduation-cap service-icon"></i>
+                <h3>Website Institusi Pendidikan</h3>
+                <p>Platform digital lengkap untuk sekolah, kursus, atau lembaga pendidikan dengan fitur akademik.</p>
+                <ul class="service-features">
+                    <li>Portal siswa &amp; guru</li>
+                    <li>Jadwal &amp; kalender akademik</li>
+                    <li>Pengumuman &amp; berita</li>
+                    <li>Galeri kegiatan</li>
+                    <li>Sistem pendaftaran online</li>
+                </ul>
+                <div class="service-price">Mulai dari Rp 600.000 →</div>
+            </div>
+
+            <div class="service-card">
+                <i class="fas fa-gamepad service-icon"></i>
+                <h3>Game Web &amp; Mini App</h3>
+                <p>Game edukasi, kuis interaktif, atau aplikasi mini web yang menyenangkan dan fungsional.</p>
+                <ul class="service-features">
+                    <li>Game kuis interaktif</li>
+                    <li>Leaderboard real-time</li>
+                    <li>Animasi &amp; efek visual</li>
+                    <li>Multi-player sederhana</li>
+                    <li>Versi mobile-friendly</li>
+                </ul>
+                <div class="service-price">Mulai dari Rp 300.000 →</div>
+            </div>
+
+            <div class="service-card">
+                <i class="fas fa-chart-line service-icon"></i>
+                <h3>Sistem Manajemen</h3>
+                <p>Sistem informasi untuk mengelola data operasional bisnis atau institusi secara efisien dan akurat.</p>
+                <ul class="service-features">
+                    <li>Dashboard analitik visual</li>
+                    <li>Manajemen pengguna &amp; role</li>
+                    <li>Laporan &amp; ekspor data</li>
+                    <li>Notifikasi otomatis</li>
+                    <li>Backup data berkala</li>
+                </ul>
+                <div class="service-price">Mulai dari Rp 700.000 →</div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- =====================================
+         QUOTE / TESTIMONIAL
+         ===================================== -->
+    <section id="testimonial">
+        <div class="ornament-line" style="justify-content:center; margin-bottom:30px;">
+            <span style="background:rgba(255,255,255,0.1);"></span>
+            <i class="fas fa-star" style="color:var(--accent-gold); font-size:0.6rem;"></i>
+            <span style="background:rgba(255,255,255,0.1);"></span>
+        </div>
+        <blockquote class="testimonial-quote fade-up">
+            "Kode yang baik dan sederhana, bisa membangun peradaban kompleks manusia."
+        </blockquote>
+        <p class="testimonial-author fade-up delay-1">— Rizky Maulana Zein</p>
+    </section>
+
+    <!-- =====================================
+         CONTACT SECTION
+         ===================================== -->
+    <section id="contact">
+        <div class="section-header fade-up">
+            <p class="section-subtitle">Mari Berbincang</p>
+            <h2 class="section-title">Mulai Kolaborasi</h2>
+        </div>
+        <div class="fade-up delay-1">
+            <p class="contact-text">Mencari developer yang mengutamakan kualitas, estetika, dan fungsionalitas? Saya siap membantu mewujudkan visi digital Anda menjadi kenyataan.</p>
+            <a href="mailto:rizkymaulanazein@gmail.com" class="btn btn-gold">Kirim Email</a>
+
+            <div class="contact-grid" style="margin-top: 60px;">
+                <div class="contact-info-item">
+                    <span class="contact-label">Email</span>
+                    <a href="mailto:rizkymaulanazein@gmail.com" class="contact-value">rizkymaulanazein@gmail.com</a>
+                </div>
+                <div class="contact-info-item">
+                    <span class="contact-label">Lokasi</span>
+                    <span class="contact-value">Indramayu, Jawa Barat, Indonesia</span>
+                </div>
+                <div class="contact-info-item">
+                    <span class="contact-label">Status</span>
+                    <span class="contact-value" style="color: #4caf50;">● Tersedia untuk Proyek Baru</span>
+                </div>
+                <div class="contact-info-item">
+                    <span class="contact-label">Respons</span>
+                    <span class="contact-value">Dalam 24 Jam</span>
+                </div>
+            </div>
+
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/rizky-maulana-zein-42b492290" title="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/Valvasas" title="GitHub" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com/artichunters" title="Instagram" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/085795245741" title="WhatsApp" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- =====================================
+         FOOTER
+         ===================================== -->
+    <footer>
+        <p>&copy; 2026 <span>Rizky Maulana Zein</span>. Seluruh hak cipta dilindungi.</p>
+    </footer>
+
+    <!-- =====================================
+         PROJECT MODAL
+         ===================================== -->
+    <div class="modal-overlay" id="projectModal">
+        <div class="modal-box">
+            <button class="modal-close" id="modalClose">&times;</button>
+            <p class="modal-tag" id="modalTag"></p>
+            <h2 class="modal-title" id="modalTitle"></h2>
+
+            <!-- Image Slider -->
+            <div class="modal-slider" id="modalSlider">
+                <div class="slider-container" id="sliderContainer">
+                    <!-- Images will be added here -->
+                </div>
+                <button class="slider-btn prev" id="prevBtn">&lt;</button>
+                <button class="slider-btn next" id="nextBtn">&gt;</button>
+                <div class="slider-dots" id="sliderDots"></div>
+            </div>
+
+            <p class="modal-desc" id="modalDesc"></p>
+            <div class="modal-tech-list" id="modalTech"></div>
+            <div class="modal-links" id="modalLinks"></div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="portofolio.js"></script>
+</body>
+</html>
